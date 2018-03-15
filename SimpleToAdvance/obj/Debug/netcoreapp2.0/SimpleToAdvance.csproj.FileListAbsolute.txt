@@ -1,0 +1,11 @@
+C:\Users\Adit\source\repos\SimpleToAdvance\SimpleToAdvance\bin\Debug\netcoreapp2.0\SimpleToAdvance.deps.json
+C:\Users\Adit\source\repos\SimpleToAdvance\SimpleToAdvance\bin\Debug\netcoreapp2.0\SimpleToAdvance.runtimeconfig.json
+C:\Users\Adit\source\repos\SimpleToAdvance\SimpleToAdvance\bin\Debug\netcoreapp2.0\SimpleToAdvance.runtimeconfig.dev.json
+C:\Users\Adit\source\repos\SimpleToAdvance\SimpleToAdvance\bin\Debug\netcoreapp2.0\SimpleToAdvance.dll
+C:\Users\Adit\source\repos\SimpleToAdvance\SimpleToAdvance\bin\Debug\netcoreapp2.0\SimpleToAdvance.pdb
+C:\Users\Adit\source\repos\SimpleToAdvance\SimpleToAdvance\obj\Debug\netcoreapp2.0\SimpleToAdvance.csprojResolveAssemblyReference.cache
+C:\Users\Adit\source\repos\SimpleToAdvance\SimpleToAdvance\obj\Debug\netcoreapp2.0\SimpleToAdvance.csproj.CoreCompileInputs.cache
+C:\Users\Adit\source\repos\SimpleToAdvance\SimpleToAdvance\obj\Debug\netcoreapp2.0\SimpleToAdvance.AssemblyInfoInputs.cache
+C:\Users\Adit\source\repos\SimpleToAdvance\SimpleToAdvance\obj\Debug\netcoreapp2.0\SimpleToAdvance.AssemblyInfo.cs
+C:\Users\Adit\source\repos\SimpleToAdvance\SimpleToAdvance\obj\Debug\netcoreapp2.0\SimpleToAdvance.dll
+C:\Users\Adit\source\repos\SimpleToAdvance\SimpleToAdvance\obj\Debug\netcoreapp2.0\SimpleToAdvance.pdb

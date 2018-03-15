@@ -1,0 +1,72 @@
+##Compose file start v1
+# version: "3"
+# services:
+#   #services can be any kind web, db, network
+#   web:
+#     # replace username/repo:tag with your name and image details
+#     image: aditshah/kuber:v1
+#     deploy:
+#       replicas: 6
+#       resources:
+#         limits:
+#         #Use 10% of CPU across all cores 
+#           cpus: "0.1"
+#           memory: 50M
+#       #restart container if it fails.
+#       restart_policy:
+#         condition: on-failure
+#     ports:
+#     #map to port 80
+#     #Map port 80 on the host to web’s port 80.
+#       - "80:80"
+#     #load-balanced network named webnet
+#     networks:
+#       - webnet
+# networks:
+#   webnet:
+##Compose file end v1
+
+version: "3"
+services:
+  web:
+    # replace username/repo:tag with your name and image details
+    image: aditshah/kuber:v1
+    deploy:
+      replicas: 5
+      restart_policy:
+        condition: on-failure
+      resources:
+        limits:
+          cpus: "0.1"
+          memory: 50M
+    ports:
+      - "80:80"
+    networks:
+      - webnet
+  visualizer:
+    image: dockersamples/visualizer:stable
+    ports:
+      - "8080:8080"
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock"
+    deploy:
+      placement:
+        constraints: [node.role == manager]
+    networks:
+      - webnet
+networks:
+  webnet:
+
+
+#docker swarm init --advertise-addr 192.168.99.102:2377
+# $ docker swarm init --advertise-addr 192.168.99.102:2377
+# Swarm initialized: current node (y8q1lj4akep5u54huhja5jz6d) is now a manager.
+
+# To add a worker to this swarm, run the following command:
+
+#     docker swarm join --token SWMTKN-1-5f8ouswbz85mteafmdw4aoce19xhoyur0deik8nuasnm9tee37-b1xyalijn3xzl1fvkbtlkoygc 192.168.99.102:2377
+
+# To add a manager to this swarm, run 'docker swarm join-token manager' and follow the instructions.
+
+# To change the active docker-machine
+#eval $(docker-machine env <docker-machine name>)
